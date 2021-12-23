@@ -1,17 +1,32 @@
-﻿@{
+﻿@model Projekt_Teknologji.NET.Models.Contact
+@{
     ViewBag.Title = "Contact";
 }
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<div class="contact_content">
+    <div class="left-section">
+        <h2>Contact Us</h2>
+        @using (Html.BeginForm())
+        {
+            <div class="fields">
+                <div class="field">
+                    @Html.TextBoxFor(m => m.Emri, new { @placeholder = "Emri" } )
+                </div>
+                <div class="field">
+                    @Html.TextBoxFor(m=>m.Email, new { @placeholder = "Email" })
+                </div>
+            </div>
+            <div class="field">
+                @Html.TextBoxFor(m=>m.Subjekti, new { @placeholder = "Subjekti" })
+            </div>
+            <div class="field textarea">
+                @Html.TextAreaFor(m=>m.Mesazhi, new { @placeholder = "Mesazhi" })
+            </div>
+            <input type="submit" value="Dergo" class="send-msg" />
+        }
+    </div>
+    <div class="right-section">
+        <h2>Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.153103464319!2d19.81600641457006!3d41.32728400768346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350310ffc466d8b%3A0x5a0007debef988e6!2sSheshi%20Sk%C3%ABnderbej%2C%20Tirana%2C%20Shqip%C3%ABria!5e0!3m2!1ssq!2s!4v1640169746465!5m2!1ssq!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>

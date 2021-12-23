@@ -1,0 +1,94 @@
+﻿.jumbotron h1 {
+    color: blue;
+}
+
+.contact_content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.left-section {
+    width: 49%;
+    height: 100vh;
+}
+.right-section {
+    width: 49.5%;
+    height: 100vh;
+}
+.right-section iframe {
+    width: 100%;
+}
+/*Contact form*/
+.fields {
+    display: flex;
+    justify-content: space-between;
+}
+.fields .field {
+    height: 44px;
+    width: 48%;
+    margin-bottom: 15px;
+}
+form .field {
+    width: 100%;
+}
+.field #Subjekti {
+    width: 100%;
+}
+.textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.field input, .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+.button-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.send-msg {
+    color: #fff;
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #2196f3;
+    border: 2px solid #2196f3;
+    transition: all 0.3s ease;
+}
+
+.send-msg:hover {
+    color: #2196f3;
+    background: none;
+}
+
+/*Responsive*/
+
+@media (max-width: 600px){
+    .contact_content {
+        display: inline;
+    }
+    .left-section {
+        width: 100%;
+    }
+    .right-section {
+        width: 100%;
+    }
+}
