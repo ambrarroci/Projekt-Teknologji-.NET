@@ -10,12 +10,12 @@ namespace Projekt_Teknologji.NET.Models
     [Table("Contact")]
     public class Contact
     {
-        [Required]
+        [Required(ErrorMessage = "Ju lutem plotesoni fushen!")]
         public string Emri { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Ju lutem plotesoni fushen!")]
         public string Email { get; set; }
         public string Subjekti { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Shkruani mesazhin tuaj!")]
         public string Mesazhi { get; set; }
     }
 }
