@@ -24,8 +24,7 @@ namespace Projekt_Teknologji.NET
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css",
-                      "~/Content/Style.css"));
+                      "~/Content/Site.css"));
         }
     }
 }

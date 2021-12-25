@@ -20,5 +20,67 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 100%;
+}
+.jumbotron h1 {
+    color: red;
+}
+
+/*Contact page style*/
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+    width: 60%;
+}
+form textarea {
+    resize: none;
+}
+.col-md-6 {
+    margin-bottom: 15px;
+}
+
+
+.right form .send-msg {
+    color: #fff;
+    display: block;
+    width: 160px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #2196f3;
+    border: 2px solid #2196f3;
+    transition: all 0.3s ease;
+}
+
+    .right form .send-msg:hover {
+        color: #2196f3;
+        background: none;
+    }
+/*Responsive*/
+@media (max-width: 600px) {
+    .contact {
+        display: inline;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+    .contact .right form .fields {
+        display: block;
+    }
 }
