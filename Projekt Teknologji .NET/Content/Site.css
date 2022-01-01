@@ -15,16 +15,13 @@
 .dl-horizontal dt {
     white-space: normal;
 }
-
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 100%;
 }
-.jumbotron h1 {
-    color: red;
-}
+
 
 /*Contact page style*/
 .top {
