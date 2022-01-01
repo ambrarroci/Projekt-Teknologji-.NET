@@ -1,39 +1,37 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "AlbaRent- Cilesi dhe siguri!";
 }
-
-<div class="jumbotron">
-    <h1>Projekti i lendes ASP.NET MVC</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        @{ if (User.Identity.IsAuthenticated)
-            {
-                <h2>Perdoruesi i loguar eshte: @User.Identity.Name</h2>
-            }
-            else
-            {
-                <h2>Nuk ka asnje perdorues te loguar</h2>
-            }
-        }
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+<header>
+    <nav class="container">
+        <div class="logo"><i class="fas fa-car"></i> ALBARENT</div>
+        <ul>
+            <li><a href="#" class="selected">Faqe kryesore</a></li>
+            <li><a href="#">Vecorite</a></li>
+            <li><a href="#">Cmime</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li>
+                <a href="#" class="highlight">Caktoni nje takim!</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="container">
+            <p>Na vizitoni per sherbimet tona</p>
+            <a class="highlight" href="#">Caktoni nje takim!</a>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Nejda Nukaj</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+</header>
+<style>
+    body {
+        background-image: url(../../Imazhet/newC.jpg);
+        background-size: cover;
+        min-height: calc(100vh - 102px);
+    }
+     footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
