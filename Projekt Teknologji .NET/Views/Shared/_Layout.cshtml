@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -31,11 +31,25 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+
     </div>
+    <footer>
+        <ul class="container">
+            <li>
+                <strong>Vendndodhja jone</strong>
+                <p>Rruga e Barrikadave</p>
+            </li>
+            <li>
+                <strong>Numri i telefonit</strong>
+                <p>0693521765</p>
+            </li>
+            <li>
+                <strong>Email</strong>
+                <p>albarent@shitje.com</p>
+            </li>
+        </ul>
+    </footer>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
