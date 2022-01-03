@@ -1,9 +1,19 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 1px;
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-/* Set padding to keep content from hitting the edges */
+.Header-content {
+    background-image: url(../../Imazhet/newC.jpg);
+    background-size: cover;
+    width: 100vh;
+}
+body {
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+    /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 1px;
     padding-right: 1px;
@@ -45,25 +55,6 @@ form textarea {
     margin-bottom: 15px;
 }
 
-
-.right form .send-msg {
-    color: #fff;
-    display: block;
-    width: 160px;
-    height: 45px;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 15px;
-    cursor: pointer;
-    background: #2196f3;
-    border: 2px solid #2196f3;
-    transition: all 0.3s ease;
-}
-
-    .right form .send-msg:hover {
-        color: #2196f3;
-        background: none;
-    }
 /*Responsive*/
 @media (max-width: 600px) {
     .contact {
@@ -82,21 +73,36 @@ form textarea {
     }
 }
 
-* {
-    box-sizing: border-box;
+.navbar-content {
+    background-color: black;
 }
 
-body {
-    background-color: #fff;
-    font-family: "Roboto", sans-serif;
+.max-width {
+    padding: 0 50px;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.right-content {
+    width: 50%;
+}
+.right-content ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: white;
+    padding: 0;
     margin: 0;
 }
+.right-content ul li a {
+    text-decoration: none;
+    color: white;
 
-.container {
-    padding: 1rem;
-    margin: 0 auto;
-    max-width: 100%;
-    width: 3000px;
 }
 
 header {
