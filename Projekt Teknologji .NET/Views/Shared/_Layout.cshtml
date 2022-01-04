@@ -6,11 +6,13 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
 
 </head>
 <body>
     <div class="navbar-content">
-    <div class="max-width">
+    <div class="max-width-c">
         <nav class="container-nav">
             <div class="logo"><i class="fas fa-car">ALBARENT</i></div>
             <div class="right-content">
@@ -22,8 +24,9 @@
             </div>
         </nav>
     </div>
+        </div>
         <!---@Html.Partial("_LoginPartial")-->
-    <div class="container body-content">
+    <div class="body-content">
         @RenderBody()
     </div>
     <footer>
