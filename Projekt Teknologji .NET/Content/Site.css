@@ -84,7 +84,7 @@ form textarea {
     width: 100%;
 }
 .right-content {
-    width: 50%;
+    width: 55%;
 }
 .right-content ul {
     display: flex;
@@ -100,7 +100,9 @@ form textarea {
     color: white;
 
 }
-
+.nav-right {
+    width: 35%;
+}
 /* .content eshte per paragrafin dhe caktoni nje takim*/
 .content {
     font-size: 3rem;
@@ -135,7 +137,7 @@ nav li a {
      color: black;
      padding: 1rem;
      text-decoration: none;
-     font-size:20px;
+     font-size:18px;
     }
 
 .selected {

@@ -20,12 +20,12 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                    @Html.Partial("_LoginPartial")
                 </ul>
             </div>
         </nav>
     </div>
         </div>
-        <!---@Html.Partial("_LoginPartial")-->
     <div class="body-content">
         @RenderBody()
     </div>
