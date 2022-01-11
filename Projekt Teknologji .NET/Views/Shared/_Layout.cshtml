@@ -7,14 +7,14 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
     <div class="navbar-content">
     <div class="max-width-c">
         <nav class="container-nav">
-            <div class="logo"><i class="fas fa-car">ALBARENT</i></div>
+            <div class="logo"><i class="fas fa-car">@Html.ActionLink("ALBARENT", "Index", "Home")</i></div>
             <div class="right-content">
                 <ul>
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -30,6 +30,7 @@
         @RenderBody()
     </div>
     <footer>
+        <div class="max-width-c">
         <ul class="container">
             <li>
                 <strong>Vendndodhja jone</strong>
@@ -44,6 +45,15 @@
                 <p>albarent@shitje.com</p>
             </li>
         </ul>
+        <div class="footer-bottom">
+            <div class="fb-right">&copy; @DateTime.Now.Year  -  Te gjitha te drejtat e rezervuara</div>
+            <div class="fb-left">
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/adii_korici__/" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/admirim-kori%C3%A7i-439115172/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+        </div>
     </footer>
 
 
