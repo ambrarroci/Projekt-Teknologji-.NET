@@ -176,7 +176,10 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Makinat.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Rezervimet.cs" />
+    <Compile Include="Models\Tipi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -271,9 +274,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50962</DevelopmentServerPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50962/</IISUrl>
+          <IISUrl>http://localhost:63035/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
