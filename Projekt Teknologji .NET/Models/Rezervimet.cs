@@ -11,7 +11,7 @@ namespace Projekt_Teknologji.NET.Models
     public class Rezervimet
     {
         [Required]
-        public int IdRezervimi { get; set; }
+        public int ID { get; set; }
 
         [Required]
         [Display(Name = "Date Rezervimi")]
@@ -26,8 +26,5 @@ namespace Projekt_Teknologji.NET.Models
 
         [Required]
         public decimal Pagesa_totale { get; set; }
-
-        [ForeignKey("UserId")]
-        public ApplicationUser User {get; set; }
     }
 }

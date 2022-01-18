@@ -173,6 +173,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112111700200_InitialCreate.cs" />
+    <Compile Include="Migrations\202112111700200_InitialCreate.Designer.cs">
+      <DependentUpon>202112111700200_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201181520300_new.cs" />
+    <Compile Include="Migrations\202201181520300_new.Designer.cs">
+      <DependentUpon>202201181520300_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201181522584_new-field.cs" />
+    <Compile Include="Migrations\202201181522584_new-field.Designer.cs">
+      <DependentUpon>202201181522584_new-field.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -258,6 +271,17 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202112111700200_InitialCreate.resx">
+      <DependentUpon>202112111700200_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201181520300_new.resx">
+      <DependentUpon>202201181520300_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201181522584_new-field.resx">
+      <DependentUpon>202201181522584_new-field.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -274,6 +298,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54710/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
