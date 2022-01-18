@@ -56,6 +56,9 @@ form textarea {
 
 /*Responsive*/
 @media (max-width: 600px) {
+    .max-width-c {
+        padding: 0 20px;
+    }
     .contact {
         display: inline;
     }
@@ -69,6 +72,15 @@ form textarea {
     }
     .contact .right form .fields {
         display: block;
+    }
+    .footer-bottom .fb-right {
+        width: 55%;
+    }
+    .footer-bottom .fb-left {
+        width: 35%;
+    }
+    .footer-bottom i {
+        font-size: 26px;
     }
 }
 
@@ -189,7 +201,7 @@ footer ul {
     margin-top: 10px;
 }
 .fb-right {
-    width: 75%;
+    width: 55%;
 }
 .fb-left {
     width: 15%;
@@ -237,3 +249,4 @@ footer li {
       text-align: center;
     }
 }
+
